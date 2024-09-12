@@ -64,7 +64,7 @@ body {
   background-color: var(--grey700);
   color: var(--white);
   font-weight: 700;
-  padding: 10px;
+  padding: 12px 0;
   text-decoration: none;
   width: 100%;
   border-radius: 10px;
