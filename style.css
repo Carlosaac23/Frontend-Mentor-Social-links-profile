@@ -9,6 +9,7 @@
 
 /* Fonts */
 @font-face {
+  font-display: swap;
   font-family: 'Inter Variable';
   src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
 }
@@ -17,6 +18,7 @@ body {
   background-color: var(--grey900);
   color: var(--white);
   font-family: 'Inter Variable', sans-serif;
+  font-size: 0.875rem;
   height: 100vh;
   margin: 0;
   display: flex;
@@ -24,9 +26,10 @@ body {
   align-items: center;
 }
 
-.container {
+.card {
   background-color: var(--grey800);
-  width: 300px;
+  max-width: 100%;
+  margin: 25px;
   height: 500px;
   padding: 45px;
   text-align: center;
@@ -37,30 +40,28 @@ body {
   border-radius: 10px;
 }
 
-.container h1 {
-  margin: 0;
-  font-size: 24px;
+.card h1 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
-.container img {
+.card img {
   border-radius: 50%;
   margin-bottom: 15px;
 }
 
-.city {
+.card__city {
   color: var(--green);
-  font-size: 14px;
   margin-top: 8px;
   font-weight: 600;
 }
 
-.about {
+.card__about {
   margin-bottom: 20px;
-  font-size: 14px;
 }
 
-.links {
+.card__links {
   background-color: var(--grey700);
   color: var(--white);
   font-weight: 700;
@@ -71,11 +72,11 @@ body {
   margin-bottom: 15px;
 }
 
-.links:last-child {
+.card__links:last-child {
   margin-bottom: 0;
 }
 
-.links:hover {
+.card__links:hover {
   background-color: var(--green);
   color: var(--grey900);
 }
